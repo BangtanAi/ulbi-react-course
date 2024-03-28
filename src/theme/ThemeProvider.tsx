@@ -10,7 +10,7 @@ const ThemeProvider: FC = ({children}) => {
         theme: theme,
         setTheme: setTheme,
     }), [theme])
-
+    // Step 2: Put your theme in the box with a Provider (Context)
     return (
         <ThemeContext.Provider value={defaultProps}>
             {children}

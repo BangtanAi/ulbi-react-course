@@ -7,6 +7,7 @@ interface UseThemeResult {
 }
 
 export function useTheme(): UseThemeResult {
+    // Step 3: Open the box and take out the theme with useContext (Context)
     const {theme, setTheme} = useContext(ThemeContext);
 
     const toggleTheme = () => {
